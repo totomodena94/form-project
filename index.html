@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,49 +19,47 @@
     </div>
     <div class="right">
         <p>Esta es una prueba en la que pongo en práctica lo aprendido en el módulo de formularios de The Odin Project</p>
-    
-        <form action="" method="post">
-            <legend>Let's do it!</legend>
+        <h2 id="legend-form">Let's do it!</h2>
 
+        <form action="" method="post">
+            
             <div class="campo-form">
                 <label for="name">Nombre</label>
-                <input type="text" name="first-name" id="name" required>
+                <input class="input" type="text" name="first-name" id="name" minlength="4" required>
             </div>
             <div class="campo-form">
                 <label for="surname">Apellido</label>
-                <input type="text" name="surname" id="surname" required>
+                <input class="input" type="text" name="surname" id="surname" minlength="4" required>
             </div>
 
-            <div>
+            <div class="campo-form">
                 <label for="mail">Correo electrónico</label>
-                <input type="mail" name="mail" id="mail" required>
+                <input  class="input" type="email" name="mail" id="mail" required>
             </div>
 
-            <div>
+            <div class="campo-form">
                 <label for="phone-number">Número de télefono</label>
-                <input type="number" name="phone-number" id="phone-number">
+                <input class="input" type="tel"  name="phone-number" minlength="10" id="phone-number" required>
             </div>
-            <div>
+            <div class="campo-form">
                 <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password">
+                <input class="input" type="password" name="password" minlength="10" id="password" required>
             </div>
-            <div>
+            <div class="campo-form">
                 <label for="confirm-password">Confirmar contraseña</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <input class="input" type="password" name="confirm-password" minlength="10" id="confirm-password" required>
             </div>
+
+            <button type="submit">Create account</button>
+            
 
 
 
         </form>
-
+        <span>Todavía no tienes una cuenta?</span>
+        <a href="">Login</a>
 
     </div>
-
-
-
-
-
-
 
     <script src="app.js"></script>
 </body>
